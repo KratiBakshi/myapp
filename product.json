@@ -1,0 +1,63 @@
+{
+  "Products": [
+    {
+      "id": 2,
+      "name": "FC Barcelona",
+      "quantity": "Ernesto Valverde",
+      "stock": "The best football team in the world!",
+      "price": 5
+    },
+    {
+      "name": "zzzzzzzzzzzzzz",
+      "quality": null,
+      "stock": null,
+      "price": null,
+      "id": 15
+    },
+    {
+      "name": "aaaaaaaaaaaaaaaa",
+      "quality": null,
+      "stock": null,
+      "price": null,
+      "id": 50
+    },
+    {
+      "name": "ddddddddd",
+      "quality": null,
+      "stock": null,
+      "price": null,
+      "id": 51
+    },
+    {
+      "name": "FC Barcelonadad",
+      "stock": "The best football team in the world!",
+      "price": 5,
+      "id": 52
+    },
+    {
+      "name": "",
+      "quality": null,
+      "stock": null,
+      "price": null,
+      "id": 53
+    },
+    {
+      "name": "FC Barcelonaeeee",
+      "stock": "The best football team in the world!",
+      "price": 5,
+      "id": 54
+    }
+  ],
+  "Cutomers": [
+    {
+      "name": "kriya",
+      "address": "bhopal",
+      "mobile-no": 12345
+    },
+    {
+      "name": "Ram",
+      "address": "indore",
+      "mobile-no": 12345678910
+    }
+  ]
+}

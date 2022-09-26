@@ -1,0 +1,66 @@
+<p>product works!</p>
+
+<!-- adding products to JSON api -->
+<form [formGroup]="productForm" (ngSubmit)="save(productForm)">
+    <div class="container">
+    <div class="  mb-3">
+        <label for="name" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="name" name="name" formControlName="name" [(ngModel)]="product.name">
+        <!-- {{product}} -->
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="text" class="form-control" id="quantity" name="quality" formControlName="quality" [(ngModel)]="product.quality">
+      </div>
+      <div class="mb-3">
+        <label for="stock" class="form-label">Stock</label>
+        <input type="text" class="form-control" id="stock" name="stock" formControlName="stock" [(ngModel)]="product.stock">
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" class="form-control" id="price" name="price" formControlName="price" [(ngModel)]="product.price">
+      </div>
+
+      <button class="btn btn-success" type="submit" value="save" (click)="addProducts1(productForm)">Save</button> &nbsp;&nbsp;&nbsp;
+
+      <button class="btn btn-primary" (click)="getProduct()"> Get Products</button>
+      <!-- <button class="btn btn-success" [disabled]="disabled"> Get Products</button> -->
+
+    </div>
+   
+</form>
+
+<!-- displaying products details -->
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Quality</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Price</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let items of product; let i=index">
+  
+        <td>{{items.id}}</td>
+        <td>{{items.name}}</td>
+        <td>{{items.quality}}</td>
+        <td>{{items.stock}}</td>
+        <td>{{items.price}}</td>
+        <td>
+          <button class="btn btn-success" (click)="editProduct(items.id, items)">Edit</button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteProduct(items.id)">Delete</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+
